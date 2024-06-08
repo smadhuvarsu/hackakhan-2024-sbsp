@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>C-Section Simulation</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+      body { margin: 0; }
+      canvas { display: block; }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Operating Bed -->
+      <a-box position="0 0.25 -3" depth="2" height="0.5" width="5" color="#8ac3f2"></a-box>
+
+      <!-- Pregnant Patient -->
+      <a-box position="0 0.5 -3" depth="1" height="0.3" width="4" color="#FFDAB9"></a-box> <!-- Body -->
+      <a-sphere position="0 0.55 -3" radius="0.5" color="#FFDAB9"></a-sphere> <!-- Belly -->
+
+      <!-- Table with Surgical Tools -->
+      <a-box position="5 0.25 -3" depth="1" height="0.5" width="1.5" color="##878787"></a-box>
+      <a-box position = "5 0.5 -3" depth = "0.25" height = "0.1" width = "0.25" color = "#ed2415"></a-box>
+
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- Lighting -->
+      <a-light type="directional" position="1 1 0.5" intensity="0.5"></a-light>
+      <a-light type="ambient" color="#ffffff" intensity="0.4"></a-light>
+
+      <!-- Camera -->
+      <a-camera position="0 1.6 4"></a-camera>
+    </a-scene>
+  </body>
+</html>
